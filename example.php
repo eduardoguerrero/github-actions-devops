@@ -17,5 +17,12 @@ function isValidLogin($user, $password) {
     return $auth;
 }
 
+function getUser($id)
+{
+    if ($id <= 0) return "Invalid user ID";
+    // Code to retrieve user from database..
+    return array("id" => 1001, "username"=> "user1001", "email"=> "example@gmail.com");
+}
+
 
 ?>
